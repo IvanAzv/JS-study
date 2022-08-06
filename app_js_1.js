@@ -1,4 +1,11 @@
 const userName = prompt("Вітаю! Введіть Ваше ім'я")
+if (userName === '') {
+    userName = prompt('Enter correct name');
+} else if(userName.length >= 1) {
+    alert(`Hello ${userName}`)
+}
+
+
 const userAge = prompt('Скільки Вам рочків?')
 
 if (userAge < 18) {
@@ -15,4 +22,13 @@ if (userAge < 18) {
     alert ('Введено не вірне значення! Будь ласка, перезавантажте форму')
 }
     
-    
+    // Вариант через свитч switch
+
+// switch (userAge) {
+//     case userAge < 18:
+//         alert ('Вибачте, доступ заборонено!')
+//         break;
+
+//     default:
+//         break;
+// }

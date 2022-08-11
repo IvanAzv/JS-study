@@ -1,10 +1,20 @@
-const enterNumber = prompt('Введіть число')
-while (i = enterNumber % 5 === 0) {
-    alert(i)
-    break
+const enterUserNumber = +prompt('Введіть число')
+while (isNaN(enterUserNumber)) {
+    alert('Будб ласка, введіть число!')
+    enterUserNumber = +prompt('Введіть число')
+}
+for (let i = 0; i <= enterUserNumber; i++) {
+    if (i % 5 == 0) {
+        console.log(i);
+    }
+    if (enterUserNumber < 5) {
+        console.log('Вибачте, умова не виконується')
+    }
+
+    else('Щось пішло нетак')
     
 } 
-alert(`Hello ${enterNumber}`)
+
 
 // Цикли
 // Потрибни для багатократногого виконання коду в проекті

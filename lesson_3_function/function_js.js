@@ -1,10 +1,11 @@
-const userNumber1 = +prompt('Введіть перше число');
+let userNumber1 = +prompt('Введіть перше число');
 
-const userNumber2 = +prompt('Введіть друге число');
+let userNumber2 = +prompt('Введіть друге число');
 
 while (isNaN(userNumber1 && userNumber2)) {
-    alert('Ви ввели не вірне значення, спробуйте ще раз')
-    break
+    alert('Ви ввели не вірне значення, спробуйте ще раз');
+    userNumber1 = +prompt('Введіть перше число');
+    userNumber2 = +prompt('Введіть друге число');
 }
 
 // не можу зрозуміти як повернутись на початок коду, 
